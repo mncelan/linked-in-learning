@@ -1,0 +1,18 @@
+Docker:
+
+If you already have postgres running on your local you need to stop it for the docker one to run
+with no errors like below:
+
+psql: error: FATAL:  password authentication failed for user "postgres"
+FATAL:  password authentication failed for user "postgres"
+
+To check status/stop/start local postgres:
+# sudo /etc/init.d/postgresql stop/status/start
+
+Restart Docker
+
+#sudo systemctl restart docker
+
+Permissions denied while creating a script
+
+#sudo chmod 666 /var/run/docker.sock
